@@ -15,6 +15,8 @@ app.directive('highlight', function (el) { //自定义高亮样式 v-highlight
         hljs.highlightBlock(block)
     })
 })
+console.log(document.querySelector('#app'));
+
 // app.use(store)
 app.use(tooltip)
 app.use(router);

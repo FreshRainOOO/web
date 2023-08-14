@@ -28,11 +28,15 @@ const getList = () => {
     let arr = [];
     let arr2 = []
     for (const path in mdList) {
+        console.log('mdList',mdList);
+        console.log('path',path);
+        
         const pathName = path.split('/').pop()?.slice(0, -3); //将前缀与.md去除 只剩文件名
         const fullpathName = path.slice(2, -3); //只将/markdown/ 去除
         arr.push(pathName)
         arr2.push({ fullpathName: fullpathName, key: pathName })
     }
+    return { pathList: arr, fullPathList: arr2 };
     return { pathList: arr, fullPathList: arr2 };
 };
 const list = ref<(string | undefined)[]>(getList().pathList)

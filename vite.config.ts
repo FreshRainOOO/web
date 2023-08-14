@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import { plugin } from 'vite-plugin-markdown'
 import * as path from 'path'
 export default defineConfig({
-  base: '/web/',
+  base: './web/',
   plugins: [vue(), plugin({
     mode: ["html", 'toc'],
   })],
