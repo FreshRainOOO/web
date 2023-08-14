@@ -1,5 +1,5 @@
 // 导入router所需的方法
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHistory ,createWebHashHistory } from "vue-router";
 // import store from "../store";
 // 导入路由页面的配置
 import routes from "./routes";
@@ -7,13 +7,13 @@ import App from "@/App.vue";
 // 路由参数配置
 const router = createRouter({
   // 使用hash(createWebHashHistory)模式，(createWebHistory是HTML5历史模式，支持SEO)
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: routes,
 });
 
 // 全局前置守卫，这里可以加入用户登录判断
 router.beforeEach((to, from, next) => {
-  console.log("App", window.renderLoadingDom);
+  // console.log("App", window.renderLoadingDom);
   window.renderLoadingDom();
   // store.commit("goNewpage");
   // if (to.fullPath) {

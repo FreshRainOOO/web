@@ -1,8 +1,11 @@
 
 <template>
-  <router-view />
-  <div class="loading" ref="loadingDom">
-    <div v-for="item in randomDivColor" :style="{backgroundColor:item}" :key="item"><span class="iconfont icon-xingxing"></span></div>
+  <div>
+    <router-view />
+    <div class="loading" ref="loadingDom">
+      <div v-for="item in randomDivColor" :style="{ backgroundColor: item }" :key="item"><span
+          class="iconfont icon-xingxing"></span></div>
+    </div>
   </div>
 </template>
 <script lang="ts" setup>
@@ -14,7 +17,7 @@ import { watch, ref, onMounted, nextTick } from 'vue';
 const loading = ref<boolean>(true)
 const animeRef = ref()
 const loadingDom = ref<HTMLDivElement>()
-const randomDivColor = ['pink','green','skyblue','gold','purple']
+const randomDivColor = ['pink', 'green', 'skyblue', 'gold', 'purple']
 const reAnime = () => {
   loadingDom.value && (loadingDom.value.style.visibility = 'visible')
   animeRef.value.restart()
@@ -53,7 +56,8 @@ onMounted(() => {
   top: 0;
   width: 100vw;
   height: 100vh;
-overflow: hidden;
+  overflow: hidden;
+
   >div {
     height: 20%;
     width: 0%;
