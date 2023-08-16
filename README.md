@@ -25,4 +25,6 @@ Vue 3 + TypeScript + Vite
 
 ## npm run preview
 ## dist 推送到 github pages
+```shell
  git subtree push --prefix dist origin gh-pages
+```

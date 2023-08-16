@@ -1,6 +1,6 @@
 // 导入router所需的方法
 import { createRouter, createWebHistory ,createWebHashHistory } from "vue-router";
-// import store from "../store";
+import store from "../store";
 // 导入路由页面的配置
 import routes from "./routes";
 import App from "@/App.vue";
@@ -15,19 +15,19 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   // console.log("App", window.renderLoadingDom);
   window.renderLoadingDom();
-  // store.commit("goNewpage");
-  // if (to.fullPath) {
-  //   if (to.fullPath.split("/").length > 2) {
-  //     //一级路由不保存
-  //     let historyPages = JSON.parse(localStorage.getItem("historyPages"));
-  //     const toPage = { name: to.name.split("/").at(-1), path: to.fullPath };
-  //     historyPages || (historyPages = []); //没有的话,给个空数组
-  //     historyPages.find((item) => item.path == toPage.path) ||
-  //       historyPages.unshift(toPage); //如果原数组没有当前路由,添加到头部;
-  //     historyPages.length > 5 && historyPages.pop(); //长度大于5,删除尾
-  //     localStorage.setItem("historyPages", JSON.stringify(historyPages));
-  //   }
-  // }
+  store.commit("goNewpage");
+  if (to.fullPath) {
+    if (to.fullPath.split("/").length > 2) {
+      //一级路由不保存
+      let historyPages = JSON.parse(localStorage.getItem("historyPages"));
+      const toPage = { name: to.name.split("/").at(-1), path: to.fullPath };
+      historyPages || (historyPages = []); //没有的话,给个空数组
+      historyPages.find((item) => item.path == toPage.path) ||
+        historyPages.unshift(toPage); //如果原数组没有当前路由,添加到头部;
+      historyPages.length > 5 && historyPages.pop(); //长度大于5,删除尾
+      localStorage.setItem("historyPages", JSON.stringify(historyPages));
+    }
+  }
 
   // 继续前进 next()
   // 返回 false 以取消导航
