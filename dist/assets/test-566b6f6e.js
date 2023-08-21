@@ -1,1 +1,0 @@
-import{M as r}from"./index-1d2d98a8.js";import{d as c,c as e,w as i,E as a,g as t,j as n}from"./index-208f82d6.js";const u=c({__name:"test",setup(p){const o=()=>{r({type:"success",str:"复制成功"})};return(l,_)=>{const s=n("tooltip");return t(),e("div",{onClick:o},[i((t(),e("span",null,[a("hover")])),[[s,"left",void 0,{right:!0}]])])}}});export{u as default};

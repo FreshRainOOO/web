@@ -32,48 +32,48 @@ const linkList: Link[] = [
     {
         path: 'https://github.com/FreshRainOOO/da-blog',
         imgSrc: 'https://ts4.cn.mm.bing.net/th?id=ODLS.fe916855-7a5a-4f44-b52e-1c5c31f0329d&w=32&h=32&o=6&pid=13.1',
-        describe: 'github(不定期更新)'
+        describe: 'github'
     },
     {
         path: 'https://gitee.com/li-mengdada/blackda',
         imgSrc: 'https://ts3.cn.mm.bing.net/th?id=ODLS.801cff4e-cdce-446d-ba43-fa6cf0e27c18&w=32&h=32&o=6&pid=13.1',
-        describe: 'gitee(开源)'
+        describe: 'gitee'
     },
     {
         path: 'https://anime.js.cool/documentation',
         imgSrc: 'https://anime.js.cool/documentation/assets/img/icons/icon-doc.png',
         describe: 'anime.js中文文档'
     },
-    {
-        path: 'https://animejs.com/documentation/',
-        imgSrc: 'https://animejs.com/documentation/assets/img/anime-mini-logo.svg',
-        describe: 'anime.js原文档'
-    },
-    {
-        path: 'https://space.bilibili.com/292519641?spm_id_from=444.41.0.0',
-        imgSrc: 'https://ts1.cn.mm.bing.net/th?id=ODLS.4ce7043c-066c-4c41-bb41-16101bee101b&w=32&h=32&o=6&pid=13.1',
-        describe: 'bilibili'
-    },
-    {
-        path: 'https://cupfox.app/',
-        imgSrc: 'https://apic.douyucdn.cn/upload/avanew/face/201803/25/19/64b723fd00fc71d9526c9618acfd9ac6_middle.jpg',
-        describe: 'cupfox'
-    },
-    {
-        path: 'https://c.runoob.com/more/svgeditor/',
-        imgSrc: 'https://ts1.cn.mm.bing.net/th?id=OIP-C.mptH4EDBlxXQ5RF78FUuBAHaHa&w=192&h=185&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2',
-        describe: 'svg绘图'
-    },
-    {
-        path: 'https://www.mp3smaller.com/zh/',
-        icon: 'icon-sharpicons_Orca',
-        describe: '压缩音乐'
-    },
-    {
-        path: 'https://www.runoob.com/charsets/ref-emoji.html',
-        icon: 'icon-sharpicons_Rabbit',
-        describe: 'emoji对应html码'
-    },
+    // {
+    //     path: 'https://animejs.com/documentation/',
+    //     imgSrc: 'https://animejs.com/documentation/assets/img/anime-mini-logo.svg',
+    //     describe: 'anime.js原文档'
+    // },
+    // {
+    //     path: 'https://space.bilibili.com/292519641?spm_id_from=444.41.0.0',
+    //     imgSrc: 'https://ts1.cn.mm.bing.net/th?id=ODLS.4ce7043c-066c-4c41-bb41-16101bee101b&w=32&h=32&o=6&pid=13.1',
+    //     describe: 'bilibili'
+    // },
+    // {
+    //     path: 'https://cupfox.app/',
+    //     imgSrc: 'https://apic.douyucdn.cn/upload/avanew/face/201803/25/19/64b723fd00fc71d9526c9618acfd9ac6_middle.jpg',
+    //     describe: 'cupfox'
+    // },
+    // {
+    //     path: 'https://c.runoob.com/more/svgeditor/',
+    //     imgSrc: 'https://ts1.cn.mm.bing.net/th?id=OIP-C.mptH4EDBlxXQ5RF78FUuBAHaHa&w=192&h=185&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2',
+    //     describe: 'svg绘图'
+    // },
+    // {
+    //     path: 'https://www.mp3smaller.com/zh/',
+    //     icon: 'icon-sharpicons_Orca',
+    //     describe: '压缩音乐'
+    // },
+    // {
+    //     path: 'https://www.runoob.com/charsets/ref-emoji.html',
+    //     icon: 'icon-sharpicons_Rabbit',
+    //     describe: 'emoji对应html码'
+    // },
     {
         path:'https://www.handsome-css.com/others',
         icon: 'icon-sharpicons_Orca',
